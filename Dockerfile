@@ -6,9 +6,6 @@ RUN yum update -y && \
     yum install -y java-1.8.0-openjdk-devel && \
     yum clean all
 
-# Clone the Maven project from GitHub
-RUN git clone https://github.com/Aswin9796/maven-test.git /usr/local/maven-test
-
 # Set the working directory to the project directory
 WORKDIR /usr/local/maven-test
 
