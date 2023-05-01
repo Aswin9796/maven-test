@@ -8,4 +8,4 @@ RUN yum -y install java
 
 EXPOSE 8123
 
-CMD /bin/bash
+CMD ["java", "-jar", "/usr/local/maven-test/target/maven-test-1.0-SNAPSHOT.jar"]
