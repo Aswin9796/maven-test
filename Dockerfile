@@ -6,4 +6,6 @@ RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|
 
 RUN yum -y install java
 
+EXPOSE 8123
+
 CMD /bin/bash
